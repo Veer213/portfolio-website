@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veer Pratap | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="text-white font-mono">
+<!-- HERO SECTION -->
+<section class="relative h-screen flex items-center justify-center flex-col text-center px-4 overflow-hidden">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+    <source src="assets/vedio 2.mp4" type="video/mp4" />
+  </video>
+
+  <h1 class="text-4xl md:text-6xl font-bold glow tracking-wide">Hey, I'm Veer Pratap</h1>
+  <p id="typewriter" class="mt-4 text-xl md:text-2xl text-cyan-400 font-semibold cursor"></p>
+
+  <!-- Tagline paragraph -->
+  <p class="mt-6 max-w-xl text-center hero-description">
+    I blend design with logic to build digital experiences that stand out.
+    From sleek UIs to smart interactions, I create projects that speak.
+  </p>
+
+  <a href="#about" class="mt-10 px-6 py-3 bg-cyan-500 hover:bg-cyan-700 transition-all rounded-full text-black font-bold">See My Work</a>
+</section>
+
+
+<!-- ABOUT / MY JOURNEY SECTION -->
+<section id="about" class="py-24 bg-[#0f172a] px-6 md:px-20">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-20">
+    
+    <!-- Profile Image + Stats -->
+    <div class="flex flex-col items-center gap-6">
+      <!-- Profile Image -->
+      <div class="profile-img-container-large">
+        <img src="assets/veer.jpg" alt="Veer Pratap" class="profile-img-large" />
+      </div>
+
+      <!-- Stat Cards -->
+      <div class="flex gap-4 mt-4">
+        <div class="stat-card">GPA<br><span class="stat-value">3.5</span></div>
+        <div class="stat-card">Graduation<br><span class="stat-value">2029</span></div>
+        <div class="stat-card">Institute<br><span class="stat-value">Dewan Public School</span></div>
+      </div>
+    </div>
+
+    <!-- About Text -->
+    <div class="flex-1 space-y-5">
+      <p class="about-text">
+        I'm <span class="highlight">Veer Pratap</span> — a creative developer and designer who turned curiosity into obsession. I started with basic HTML in school and quickly dove into Python, design systems, and full-stack development. What began as a hobby became real projects, leadership roles, and constant challenges. Now, I’m not just a student — I’m a builder who learns fast, creates with intent, and never settles for “good enough.”
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="py-20 px-6 md:px-20 bg-[#020617]">
+  <h2 class="section-title">Experience</h2>
+  <div class="max-w-5xl mx-auto card-grid">
+    <div class="card-style">
+      <img src="assets/iit.png" alt="IIT Guwahati" />
+      <h3>IIT Guwahati Summer School</h3>
+      <p>Selected for prestigious tech summer school in 2025, focused on robotics, AI, and innovation.</p>
+    </div>
+    <div class="card-style">
+      <img src="assets/hardvard.png" alt="Harvard Python" />
+      <h3>Harvard Online Python Course</h3>
+      <p>Completed HarvardX's Python course in 2024, mastering key programming and CS fundamentals.</p>
+    </div>
+    <div class="card-style">
+      <img src="assets/google.png" alt="Google AI" />
+      <h3>Google AI for Everyone</h3>
+      <p>Learned how AI works and how to navigate the future of AI applications through Andrew Ng's course on Coursera.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-20 px-6 md:px-20 bg-[#0f172a]">
+  <h2 class="section-title">Projects</h2>
+  <div class="max-w-5xl mx-auto card-grid">
+    <div class="card-style">
+      <img src="assets/jarvis.webp" alt="JAVIRS" />
+      <h3>JAVIRS – Smart AI Assistant</h3>
+      <p>Voice-controlled AI assistant using Python with custom commands and modular architecture.</p>
+    </div>
+    <div class="card-style">
+      <img src="assets/object.jpeg" alt="YOLO" />
+      <h3>Object Detection with YOLO</h3>
+      <p>Real-time object detection using YOLOv5 and OpenCV for smart surveillance.</p>
+    </div>
+    <div class="card-style">
+      <img src="assets/clone.jpeg" alt="RS36 Clone" />
+      <h3>RS36 Website Clone</h3>
+      <p>Responsive clone of the RS36 website built using Tailwind CSS and vanilla JS.</p>
+    </div>
+    <div class="card-style">
+      <img src="assets/trasnlator.jpeg" alt="Translator for Blind" />
+      <h3>Translator for the Blind</h3>
+      <p>Voice-first translator app using speech-to-text and TTS APIs for visually impaired users.</p>
+    </div>
+    <div class="card-style">
+      <img src="assets/wadrobe.jpeg" alt="MyWardrobe" />
+      <h3>MyWardrobe</h3>
+      <p>Fashion inventory app that helps users organize and plan outfits with a clean UI.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES SECTION (EMOJI STYLE) -->
+<section id="hobbies" class="py-20 px-6 md:px-20 bg-[#0f172a]">
+  <h2 class="section-title text-center mb-12">Hobbies</h2>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="bg-[#0b1120] rounded-2xl p-6 text-center border border-gray-800">
+      <div class="text-5xl mb-4">♟️</div>
+      <h3 class="font-semibold text-white text-lg">Chess</h3>
+      <p class="text-gray-400 text-sm mt-2">Improving logic and strategy through competitive play.</p>
+    </div>
+    <div class="bg-[#0b1120] rounded-2xl p-6 text-center border border-gray-800">
+      <div class="text-5xl mb-4">🏸</div>
+      <h3 class="font-semibold text-white text-lg">Badminton</h3>
+      <p class="text-gray-400 text-sm mt-2">Fast-paced action that sharpens reflexes and focus.</p>
+    </div>
+    <div class="bg-[#0b1120] rounded-2xl p-6 text-center border border-gray-800">
+      <div class="text-5xl mb-4">🎮</div>
+      <h3 class="font-semibold text-white text-lg">Call of Duty</h3>
+      <p class="text-gray-400 text-sm mt-2">Tactical FPS that enhances strategy, speed, and teamwork.</p>
+    </div>
+    <div class="bg-[#0b1120] rounded-2xl p-6 text-center border border-gray-800">
+      <div class="text-5xl mb-4">🎨</div>
+      <h3 class="font-semibold text-white text-lg">Creative Design</h3>
+      <p class="text-gray-400 text-sm mt-2">Exploring UI/UX trends and visual storytelling in free time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-20 px-6 md:px-20 bg-[#020617]">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="max-w-xl mx-auto text-center text-gray-300 space-y-4">
+    <p>I'm always open to collaborating or taking on new challenges. Whether it's tech, design, or innovation — let's connect!</p>
+    <p class="text-lg font-semibold text-white"> ig- 📧 @veer.pratap.10</p>
+  </div>
+</section>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

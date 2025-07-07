@@ -1,0 +1,192 @@
+/* === General Typography & Section Titles === */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Fira Code', monospace;
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #22d3ee;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #22d3ee;
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 999px;
+}
+
+/* === Profile Image === */
+.profile-img-container-large {
+  width: 240px;
+  height: 240px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 5px solid #22d3ee;
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.6);
+  background: linear-gradient(135deg, #22d3ee33, #0ea5e933);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-img-container-large:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 60px rgba(34, 211, 238, 0.8);
+}
+
+.profile-img-large {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === Stat Cards === */
+.stat-card {
+  background: #1e293b;
+  border: 1px solid #22d3ee55;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  color: #cbd5e1;
+  text-align: center;
+  font-size: 0.875rem;
+  width: max-content;
+  min-width: 100px;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+.stat-value {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 0.25rem;
+}
+
+/* === About / Description Text === */
+.about-text {
+  color: #d1d5db;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.highlight {
+  color: white;
+  font-weight: 600;
+}
+
+.hero-description {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* === Card Container Grid === */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card-style {
+  background-color: #1e293b;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-style:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(14, 165, 233, 0.15);
+}
+
+.card-style img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-style h3 {
+  margin: 1rem;
+  color: #67e8f9;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-style p {
+  margin: 0 1rem 1rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* === Tag Styles (Optional) === */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 1rem 1rem;
+}
+
+.project-tags span {
+  background-color: #0f172a;
+  color: #67e8f9;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+/* === Link Styling === */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #67e8f9;
+}
+
+
+/* Hobbies hover effect */
+#hobbies .bg-\[\#0b1120\] {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+#hobbies .bg-\[\#0b1120\]:hover {
+  transform: scale(1.05);
+  border-color: #06b6d4; /* cyan-400 */
+  box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
+}
+
+
+
+
+/* === Responsive Fixes === */
+@media (max-width: 768px) {
+  .profile-img-container-large {
+    width: 180px;
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
